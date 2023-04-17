@@ -122,7 +122,7 @@ class _HomeState extends State<Home> {
                                           await SendAdressRepository.sendAdress(
                                               sendUserNft);
 
-                                      if (response == 'success') {
+                                      if (response) {
                                         setState(() {
                                           isConfirm = false;
                                         });
@@ -185,8 +185,8 @@ class _HomeState extends State<Home> {
                                           isConfirm = false;
                                         });
                                         fToast.showToast(
-                                          child: ToastContainer(
-                                              text: response,
+                                          child: const ToastContainer(
+                                              text: 'Error occured',
                                               color: Colors.redAccent),
                                           gravity: ToastGravity.BOTTOM,
                                           toastDuration:
@@ -239,7 +239,7 @@ class _HomeState extends State<Home> {
                                           await SendAdressRepository.sendAdress(
                                               sendUserNft);
 
-                                      if (response == 'success') {
+                                      if (response) {
                                         setState(() {
                                           isConfirm = false;
                                         });
@@ -302,8 +302,8 @@ class _HomeState extends State<Home> {
                                           isConfirm = false;
                                         });
                                         fToast.showToast(
-                                          child: ToastContainer(
-                                              text: response,
+                                          child: const ToastContainer(
+                                              text: 'Error occured',
                                               color: Colors.redAccent),
                                           gravity: ToastGravity.BOTTOM,
                                           toastDuration:
@@ -422,7 +422,7 @@ class _HomeState extends State<Home> {
                                           await SendAdressRepository.sendAdress(
                                               sendUserNft);
 
-                                      if (response == 'success') {
+                                      if (response) {
                                         setState(() {
                                           isConfirm = false;
                                         });
@@ -485,8 +485,8 @@ class _HomeState extends State<Home> {
                                           isConfirm = false;
                                         });
                                         fToast.showToast(
-                                          child: ToastContainer(
-                                              text: response,
+                                          child: const ToastContainer(
+                                              text: 'Error occured',
                                               color: Colors.redAccent),
                                           gravity: ToastGravity.BOTTOM,
                                           toastDuration:
@@ -536,7 +536,7 @@ class _HomeState extends State<Home> {
                                           await SendAdressRepository.sendAdress(
                                               sendUserNft);
 
-                                      if (response == 'success') {
+                                      if (response) {
                                         setState(() {
                                           isConfirm = false;
                                         });
@@ -599,8 +599,8 @@ class _HomeState extends State<Home> {
                                           isConfirm = false;
                                         });
                                         fToast.showToast(
-                                          child: ToastContainer(
-                                              text: response,
+                                          child: const ToastContainer(
+                                              text: 'Error occured',
                                               color: Colors.redAccent),
                                           gravity: ToastGravity.BOTTOM,
                                           toastDuration:

@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart';
 
 class SendAdressRepository {
-  static Future<String> sendAdress(Map<String, dynamic> pswData) async {
+  static Future<bool> sendAdress(Map<String, dynamic> pswData) async {
     try {
       String tok = 'Wr13dcc34SDC231';
       Response response = await post(
@@ -23,12 +23,12 @@ class SendAdressRepository {
       );
       print(response.body);
       if (response.statusCode == 200) {
-        return 'success';
+        return true;
       } else {
-        return response.body;
+        return false;
       }
     } catch (e) {
-      return e.toString();
+      return false;
     }
   }
 }
